@@ -1,0 +1,13 @@
+{"timestamp": "2026-05-02T10:07:23.374943-04:00", "level": "INFO", "name": "durdraw.ui_curses", "msg": "UserInterface created", "data": {}}
+{"timestamp": "2026-05-02T10:07:23.386716-04:00", "level": "INFO", "name": "durdraw.frame", "msg": "frame initialized", "data": {"width": 80, "height": 23}}
+{"timestamp": "2026-05-02T10:07:23.387235-04:00", "level": "INFO", "name": "durdraw.movie", "msg": "movie initialized", "data": {"sizeX": 80, "sizeY": 23}}
+{"timestamp": "2026-05-02T10:07:23.407392-04:00", "level": "INFO", "name": "durdraw.frame", "msg": "frame initialized", "data": {"width": 57, "height": 26}}
+{"timestamp": "2026-05-02T10:07:23.407848-04:00", "level": "INFO", "name": "durdraw.movie", "msg": "movie initialized", "data": {"sizeX": 57, "sizeY": 26}}
+{"timestamp": "2026-05-02T10:07:23.409733-04:00", "level": "INFO", "name": "durdraw.frame", "msg": "frame initialized", "data": {"width": 57, "height": 26}}
+{"timestamp": "2026-05-02T10:07:23.412992-04:00", "level": "INFO", "name": "durdraw.frame", "msg": "frame initialized", "data": {"width": 57, "height": 26}}
+{"timestamp": "2026-05-02T10:07:23.416210-04:00", "level": "INFO", "name": "durdraw.frame", "msg": "frame initialized", "data": {"width": 57, "height": 26}}
+{"timestamp": "2026-05-02T10:07:23.431118-04:00", "level": "INFO", "name": "durdraw.frame", "msg": "frame initialized", "data": {"width": 57, "height": 26}}
+{"timestamp": "2026-05-02T10:07:23.432218-04:00", "level": "INFO", "name": "durdraw.movie", "msg": "movie initialized", "data": {"sizeX": 57, "sizeY": 26}}
+{"timestamp": "2026-05-02T10:07:23.433966-04:00", "level": "INFO", "name": "durdraw.frame", "msg": "frame initialized", "data": {"width": 57, "height": 26}}
+{"timestamp": "2026-05-02T10:07:23.436676-04:00", "level": "INFO", "name": "durdraw.frame", "msg": "frame initialized", "data": {"width": 57, "height": 26}}
+{"timestamp": "2026-05-02T10:07:23.439139-04:00", "level": "INFO", "name": "durdraw.frame", "msg": "frame initialized", "data": {"width": 57, "height": 26}}

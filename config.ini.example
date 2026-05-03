@@ -27,9 +27,6 @@ allow_empty_password = true
 # dur_file -> .dur file format (https://github.com/cmang/durdraw/tree/master)
 animation = none
 
-# Delay between each animation frame in milliseconds
-animation_frame_delay = 5
-
 # Stop the animation after some time
 # 0 -> Run forever
 # 1..2e12 -> Stop the animation after this many seconds
@@ -104,13 +101,13 @@ box_title = null
 # Brightness decrease command
 brightness_down_cmd = /usr/bin/brightnessctl -q -n s 10%-
 
-# Brightness decrease key combination, or null to disable
+# Brightness decrease key, or null to disable
 brightness_down_key = F5
 
 # Brightness increase command
 brightness_up_cmd = /usr/bin/brightnessctl -q -n s +10%
 
-# Brightness increase key combination, or null to disable
+# Brightness increase key, or null to disable
 brightness_up_key = F6
 
 # Erase password input on failure
@@ -170,15 +167,10 @@ doom_bottom_color = 0x00FFFFFF
 # Dur file path
 dur_file_path = /etc/ly/example.dur
 
-# Dur file alignment
-# The dur file can be aligned with a direction and centered easily with the flags below
-# Available inputs: topleft, topcenter, topright, centerleft, center, centerright, bottomleft, bottomcenter, bottomright
-dur_offset_alignment = center
-
-# Dur offset x direction (value is added to the current position determined by alignment, negatives are supported)
+# Dur offset x direction
 dur_x_offset = 0
 
-# Dur offset y direction (value is added to the current position determined by alignment, negatives are supported)
+# Dur offset y direction
 dur_y_offset = 0
 
 # Set margin to the edges of the DM (useful for curved monitors)
@@ -236,7 +228,7 @@ gameoflife_initial_density = 0.4
 # Command executed when pressing hibernate key (can be null)
 hibernate_cmd = null
 
-# Specifies the key combination used for hibernate
+# Specifies the key used for hibernate (F1-F12)
 hibernate_key = F4
 
 # Remove main box borders
@@ -294,6 +286,9 @@ margin_box_h = 2
 # Main box vertical margin
 margin_box_v = 1
 
+# Event timeout in milliseconds
+min_refresh_delta = 5
+
 # Set numlock on/off at startup
 numlock = false
 
@@ -304,7 +299,7 @@ path = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Command executed when pressing restart_key
 restart_cmd = /sbin/shutdown -r now
 
-# Specifies the key combination used for restart
+# Specifies the key used for restart (F1-F12)
 restart_key = F2
 
 # Save the current desktop and login as defaults, and load them on startup
@@ -316,9 +311,8 @@ service_name = ly
 # Session log file path
 # This will contain stdout and stderr of Wayland sessions
 # By default it's saved in the user's home directory
-# Important: due to technical limitations, X11, shell sessions as well as
-# launching session via KMSCON aren't supported, which means you won't get any
-# logs from those sessions.
+# Important: due to technical limitations, X11 and shell sessions aren't supported, which
+# means you won't get any logs from those sessions.
 # If null, no session log will be created
 session_log = .local/state/ly-session.log
 
@@ -328,18 +322,18 @@ setup_cmd = /etc/ly/setup.sh
 # Command executed when pressing shutdown_key
 shutdown_cmd = /sbin/shutdown -a now
 
-# Specifies the key combination used for shutdown
+# Specifies the key used for shutdown (F1-F12)
 shutdown_key = F1
 
 # Command executed when pressing sleep key (can be null)
 sleep_cmd = null
 
-# Specifies the key combination used for sleep
+# Specifies the key used for sleep (F1-F12)
 sleep_key = F3
 
 # Command executed when starting Ly (before the TTY is taken control of)
-# See file at path below for an example of changing the default TTY colors
-start_cmd = /etc/ly/startup.sh
+# If null, no command will be executed
+start_cmd = null
 
 # Center the session name.
 text_in_center = false
